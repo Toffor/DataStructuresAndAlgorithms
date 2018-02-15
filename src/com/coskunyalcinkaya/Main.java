@@ -1,9 +1,8 @@
 package com.coskunyalcinkaya;
 
+import com.coskunyalcinkaya.basic.Factorial;
 import com.coskunyalcinkaya.sort.ShellSort;
 import com.coskunyalcinkaya.sort.Sort;
-
-import java.util.Arrays;
 
 public class Main {
 
@@ -13,6 +12,6 @@ public class Main {
     public static void main(String[] args) {
         Sort sort = new ShellSort();
         sort.sort(array);
-        System.out.print(Arrays.toString(array));
+        System.out.print(new Factorial().factorialRecursive(4));
     }
 }
