@@ -1,6 +1,6 @@
 package com.coskunyalcinkaya;
 
-import com.coskunyalcinkaya.sort.InsertionSort;
+import com.coskunyalcinkaya.sort.ShellSort;
 import com.coskunyalcinkaya.sort.Sort;
 
 import java.util.Arrays;
@@ -11,7 +11,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Sort sort = new InsertionSort();
+        Sort sort = new ShellSort();
         sort.sort(array);
         System.out.print(Arrays.toString(array));
     }
