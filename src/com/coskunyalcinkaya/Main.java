@@ -1,9 +1,6 @@
 package com.coskunyalcinkaya;
 
-import com.coskunyalcinkaya.sort.MergeSort;
-import com.coskunyalcinkaya.sort.Sort;
-
-import java.util.Arrays;
+import com.coskunyalcinkaya.datastructure.stack.StackProblems;
 
 public class Main {
 
@@ -11,8 +8,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Sort sort = new MergeSort();
-        sort.sort(array);
-        System.out.println(Arrays.toString(array));
+
+        System.out.print(new StackProblems().isParenthesisMatching());
+
     }
 }
