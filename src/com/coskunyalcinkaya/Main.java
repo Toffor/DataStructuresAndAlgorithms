@@ -1,6 +1,6 @@
 package com.coskunyalcinkaya;
 
-import com.coskunyalcinkaya.datastructure.stack.StackProblems;
+import com.coskunyalcinkaya.datastructure.queue.QueueImpWithTwoStacks;
 
 public class Main {
 
@@ -9,7 +9,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.print(new StackProblems().isParenthesisMatching());
 
+        QueueImpWithTwoStacks<Integer> queue = new QueueImpWithTwoStacks<>();
+
+
+        for (int i : array){
+            queue.enqueue(i);
+        }
+
+        while (queue.size() > 0){
+            System.out.println(queue.dequeue());
+        }
     }
 }
